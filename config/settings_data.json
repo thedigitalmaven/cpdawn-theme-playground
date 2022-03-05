@@ -1,5 +1,137 @@
 {
-  "current": "Default",
+  "current": {
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+<<<<<<< HEAD
+              "text": "Welcome to our store",
+              "color_scheme": "background-1",
+              "link": ""
+            }
+          },
+          "b9ca0453-c90a-4b6d-921b-d0bdf0e8d883": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our store",
+              "color_scheme": "accent-1",
+              "link": ""
+=======
+              "color_scheme": "background-1"
+>>>>>>> 8e6a0bf5890a3469f510599b0ac714b72df44ed5
+            }
+          }
+        },
+        "block_order": [
+<<<<<<< HEAD
+          "announcement-bar-0",
+          "b9ca0453-c90a-4b6d-921b-d0bdf0e8d883"
+=======
+          "announcement-bar-0"
+>>>>>>> 8e6a0bf5890a3469f510599b0ac714b72df44ed5
+        ],
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+<<<<<<< HEAD
+          "color_scheme": "background-1",
+          "logo_width": 90,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "show_line_separator": true,
+          "enable_sticky_header": true,
+          "margin_bottom": 0
+=======
+          "logo_width": 90
+>>>>>>> 8e6a0bf5890a3469f510599b0ac714b72df44ed5
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+<<<<<<< HEAD
+              "heading": "Quick links",
+              "menu": "footer"
+=======
+>>>>>>> 8e6a0bf5890a3469f510599b0ac714b72df44ed5
+            }
+          },
+          "footer-1": {
+            "type": "link_list",
+            "settings": {
+<<<<<<< HEAD
+              "heading": "Info",
+              "menu": "footer"
+=======
+              "heading": "Info"
+>>>>>>> 8e6a0bf5890a3469f510599b0ac714b72df44ed5
+            }
+          },
+          "footer-2": {
+            "type": "text",
+            "settings": {
+<<<<<<< HEAD
+              "heading": "Our mission",
+              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+=======
+              "heading": "Our mission"
+>>>>>>> 8e6a0bf5890a3469f510599b0ac714b72df44ed5
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1",
+          "footer-2"
+        ],
+        "settings": {
+<<<<<<< HEAD
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "Subscribe to our emails",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": true,
+          "margin_top": 48,
+          "padding_top": 36,
+          "padding_bottom": 36
+=======
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "margin_top": 48
+>>>>>>> 8e6a0bf5890a3469f510599b0ac714b72df44ed5
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+        }
+      }
+<<<<<<< HEAD
+    },
+    "content_for_index": [
+
+    ]
+=======
+    }
+>>>>>>> 8e6a0bf5890a3469f510599b0ac714b72df44ed5
+  },
   "presets": {
     "Default": {
       "sections": {
@@ -15,7 +147,9 @@
           },
           "block_order": [
             "announcement-bar-0"
-          ]
+          ],
+          "settings": {
+          }
         },
         "header": {
           "type": "header",
@@ -27,7 +161,9 @@
           "type": "footer",
           "blocks": {
             "footer-0": {
-              "type": "link_list"
+              "type": "link_list",
+              "settings": {
+              }
             },
             "footer-1": {
               "type": "link_list",
@@ -55,10 +191,14 @@
           }
         },
         "main-password-header": {
-          "type": "main-password-header"
+          "type": "main-password-header",
+          "settings": {
+          }
         },
         "main-password-footer": {
-          "type": "main-password-footer"
+          "type": "main-password-footer",
+          "settings": {
+          }
         }
       }
     }
