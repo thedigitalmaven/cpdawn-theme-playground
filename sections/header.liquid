@@ -1,4 +1,8 @@
-<header class="header header1">
+
+
+{% case section.settings.header_type %}
+  {% when 'header1' %}
+    <header class="header header1">
   <ul class="header1__collections-nav">
     <li class="header1__collection-link">
     <a href="/link" >Link top <i class="fas fa-chevron-down"></i></a>
@@ -13,7 +17,20 @@
     <li class="header1__collection-link"><a href="/link" >Link</a></li>
   </ul>
 
-  <div class="header1__logo"><a href="/link">Company</a></div>
+  <div class="header1__logo"><a href="{{ routes.root_url}}">
+  {%- if section.settings.logo != blank -%}
+            {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+            <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+              src="{{ section.settings.logo | img_url: image_size }}"
+              loading="lazy"
+              class="header__heading-logo"
+              width="{{ section.settings.logo.width }}"
+              height="{{ section.settings.logo.height }}"
+              alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
+          {%- else -%}
+            {{ shop.name }}
+          {%- endif -%}</a>
+          </div>
 
   <ul class="header1__collections-nav">
     <li class="header1__collection-link">
@@ -28,14 +45,43 @@
     <li class="header1__collection-link"><a href="/link" >Link</a></li>
     <li class="header1__collection-link"><a href="/link" >Link</a></li>
   </ul>
-  
 </header>
+  {% when 'header2' %}
+
+  {% when 'header3' %}
+
+{% endcase %}
+
+
+
+
 
 {% schema %}
 {
   "name": "t:sections.header.name",
   "class": "section-header",
   "settings": [
+    {
+  "type": "select",
+  "id": "header_type",
+  "label": "Header Type",
+  "options": [
+    {
+      "value": "header1",
+      "label": "Header 1"
+    },
+    {
+      "value": "header2",
+      "label": "Header 2"
+    },
+    {
+      "value": "header3",
+      "label": "Header 3"
+    }
+  ],
+  "default": "header1"
+},
+
     {
       "type": "select",
       "id": "color_scheme",
